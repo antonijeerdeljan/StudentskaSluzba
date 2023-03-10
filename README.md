@@ -11,6 +11,7 @@ Referent se može registrovati na sistem tako što će popuniti formular za regi
 
 Registracija studenta (pri kreiranju studenta default sifra je broj indeksa):
 Student se može registrovati na sistem tako što se popuni forma za dodavanje studenta. Lozinka za studenta se automatski generiše kao njegov broj indeksa.
+Napomena: Prilikom popunjavanja forme za studenta polje za adresu popuniti u formatu BROJ, ULICA, GRAD, DRZAVA
 
 Forget password za studenta i referenta, token za izmenu sifre je poslat na mail adresu unetu prilikom kreiranja entiteta. Ukoliko sistem detektuje da se korisnik loguje sa tokenom automatski trazi unos nove sifre. Ukoliko se entitet loguje sa regularnom sifrom a zatrazio je token za povratak sifre, pri prvom logovanju sa starom sifrom brise se mogucnost za logovanje sa tokenom:
 
