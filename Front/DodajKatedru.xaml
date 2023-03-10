@@ -1,0 +1,53 @@
+﻿<Window x:Class="Front.DodajKatedru"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Front"
+        mc:Ignorable="d"
+        Title="DodajKatedru" Height="500" Width="350">
+    <Grid Height="482" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="448"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Margin="25,24,25,43">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Height="30">Sifra katedre*</Label>
+            <Label Grid.Row="1" Grid.Column="0" Height="30">Naziv *</Label>
+            <Label Grid.Row="2" Grid.Column="0" Height="30">Sef Katedre*</Label>
+
+
+
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Sifra_Katedre, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=Naziv_Katedre, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <ComboBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=sefKatedreId, UpdateSourceTrigger=PropertyChanged}" x:Name="Combobox" 
+                     Height="25">
+            </ComboBox>
+
+        </Grid>
+        <WrapPanel FlowDirection="RightToLeft" Margin="0,420,0,0" Grid.RowSpan="2" Height="62" VerticalAlignment="Top">
+            <Button Content="Odustani" IsCancel="True" HorizontalAlignment="Right" VerticalAlignment="top" Margin="110, 5, 25, 5"
+                Click="CancelButton_Click" Width="55"/>
+
+            <Button Content="Napravi Katedru" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20, 5, 20, 5"
+                Click="Button_Click"/>
+
+        </WrapPanel>
+
+
+    </Grid>
+</Window>

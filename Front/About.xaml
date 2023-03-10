@@ -1,0 +1,25 @@
+﻿<Window x:Class="Front.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Front"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="About" Height="303" Width="527">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label FontWeight="Bold">Verzija:</Label>
+            <Label Height="26">Verzija 1-finalna.</Label>
+            <Label Height="25"> </Label>
+            <Label FontWeight="Bold">Opis:</Label>
+            <Label>Nasa aplikacija opisuje rad jedne studentske sluzbe. Opisuje rad sa profesorima, predmetima i</Label>
+            <Label> studentima,kao i njihove odnose.</Label>
+            <Label Height="25"></Label>
+            <Label FontWeight="Bold">Autori:</Label>
+            <Label>Antonije Erdeljan RA 223/2020</Label>
+            <Label>Aleksandar Srajer RA 128/2020</Label>
+        </StackPanel>
+
+    </Grid>
+</Window>

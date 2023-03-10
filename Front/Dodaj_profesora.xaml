@@ -1,0 +1,86 @@
+﻿<Window x:Class="Front.Dodaj_profesora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Front"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Dodaj_profesora" Height="600" Width="350">
+    <Grid Height="600" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="550"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Margin="25,25,25,10">
+            <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Height="30">Ime*</Label>
+            <Label Grid.Row="1" Grid.Column="0" Height="30">Prezime*</Label>
+            <Label Grid.Row="2" Grid.Column="0" Height="30">Datum rodjenja*</Label>
+            <Label Grid.Row="3" Grid.Column="0" Height="30">Adresa stanovanja*</Label>
+            <Label Grid.Row="4" Grid.Column="0" Height="30">Adresa kancelarije*</Label>
+            <Label Grid.Row="5" Grid.Column="0" Height="30">Kontakt telefon*</Label>
+            <Label Grid.Row="6" Grid.Column="0" Height="30">Email*</Label>
+            <Label Grid.Row="7" Grid.Column="0" Height="30">Broj licne*</Label>
+            <Label Grid.Row="8" Grid.Column="0" Height="30">Zvanje*</Label>
+            <Label Grid.Row="9" Grid.Column="0" Height="30">Godine staza*</Label>
+            <Label Grid.Row="10" Grid.Column="0" Height="30">Katedra*</Label>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=FirstName, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=LastName, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=DatumRodj, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=AdresaStan, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=adresaKancelarije, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=Telefon, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=Email, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Path=brojLicne, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding Path=Zvanje, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <TextBox Grid.Row="9" Grid.Column="1" Text="{Binding Path=godineStaza, UpdateSourceTrigger=PropertyChanged}"
+                     Height="25"></TextBox>
+            <ComboBox Grid.Row="10" Grid.Column="1" Text="{Binding Path=Katedra, UpdateSourceTrigger=PropertyChanged}" x:Name="Combobox" 
+                     Height="25">
+            </ComboBox>
+
+        </Grid>
+
+        <WrapPanel Grid.Row="1">
+
+            <Button Content="Dodaj" IsDefault="True" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click" Margin="85,15,20,5" Width="70"></Button>
+
+            <Button Content="Zatvori prozor" IsCancel="True" Click="CancelButton_clock" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,15,20,5"></Button>
+
+        </WrapPanel>
+
+
+    </Grid>
+</Window>
+
+    

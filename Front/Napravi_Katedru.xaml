@@ -1,0 +1,30 @@
+﻿<Window x:Class="Front.Napravi_Katedru"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Front"
+        mc:Ignorable="d"
+        Title="Napravi_Katedru" Height="450" Width="500">
+    <Grid Margin="0,10,0,0">
+
+        <Label Margin ="70,40,50,20">Predmeti:</Label>
+
+        <DataGrid DockPanel.Dock="Bottom" x:Name="StudentData"
+                  ItemsSource="{Binding Path=Katedre}"
+                  SelectedItem="{Binding Path=SelectedKatedra, UpdateSourceTrigger=PropertyChanged}"
+                  AutoGenerateColumns="False" IsReadOnly="True" Margin="88,83,80,150">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Sifra katedre" Binding="{Binding Sifra_Katedre}" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Naziv katedre" Binding="{Binding Naziv_Katedre}" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Sef Katedre" Binding="{Binding sefKatedreId}" Width="100"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Napravi" Click="Potvrda_button_click" HorizontalAlignment="Left" Margin="91,326,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="Ugasi" Click="Odustani_button_click" HorizontalAlignment="Left" Margin="230,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.063,0.538" Width="60"/>
+        <Button Content="PostaviSefa" Click="Postavisefa_button_click" HorizontalAlignment="Left" Margin="360,326,0,0" VerticalAlignment="Top" Width="60"/>
+
+
+    </Grid>
+</Window>
