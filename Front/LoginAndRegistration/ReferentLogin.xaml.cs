@@ -89,6 +89,7 @@ namespace Front
                 {
                     NewPassword newpass = new NewPassword(Email, _passHash, _logregController);
                     newpass.Show();
+                    Close();
                     //nateraj ga na new password
                     //kada napravi new password spakuj kao glavni password
                     //nateraj ga na login

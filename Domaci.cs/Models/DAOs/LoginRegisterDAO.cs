@@ -258,7 +258,7 @@ namespace Domaci.cs.Models.DAOs
                 try
                 {
                     client.Connect("smtp.gmail.com", 465, true);
-                    client.Authenticate("antonijeerdeljan01@gmail.com", "");
+                    client.Authenticate("oisisiprojekat@gmail.com", "gbgzgkhisqebmeql");
                     client.Send(message);
 
                 }
@@ -309,7 +309,7 @@ namespace Domaci.cs.Models.DAOs
                 try
                 {
                     client.Connect("smtp.gmail.com", 465, true);
-                    client.Authenticate("antonijeerdeljan01@gmail.com", "");
+                    client.Authenticate("oisisiprojekat@gmail.com", "gbgzgkhisqebmeql");
                     client.Send(message);
 
                 }
