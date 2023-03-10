@@ -1,6 +1,8 @@
 # StudentskaSluzba
 Predmetni projekat iz predmeta OISISI
 
+Dodatne funkcionalnosti
+
 Login referenta i studenta:
 Korisnik sistema može da se prijavi na svoj nalog pomoću odgovarajućeg korisničkog imena i lozinke.
 
